@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "687A364E-366F-4BB1-B4F8-4C236C75A0E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8A17ECC4-D305-4DA8-B249-58DE609333C4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/Deck.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "init()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C6FBA3B3-AF17-4B9C-B3A3-34809EC94D51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/Deck.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "init()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C6FBA3B3-AF17-4B9C-B3A3-34809EC94D51 - f0bf4ffcaadef7eb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.Deck.init() -&gt; MySet.Deck"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/Deck.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "712">
+               </Location>
+               <Location
+                  uuid = "C6FBA3B3-AF17-4B9C-B3A3-34809EC94D51 - f0bf4ffcaadef7c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.Deck.init() -&gt; MySet.Deck"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/Deck.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "700">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - c38fc3136e9cd9e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.game.getter : MySet.Set"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - fb37f50963bb4de8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.game.setter : MySet.Set"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - 8b95a65c7b4a6cf9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.game.modify : MySet.Set"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - a33a69f34fb062e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.game.modify : MySet.Set with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - 5b03abc8935b87ed"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; MySet.ViewController"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "5806F3E1-F993-4172-A0DA-68235F2AF13C - b27ba07afdab39a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MySet.ViewController&gt;"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "22C41F6D-75B6-42BC-A237-64262CCFCDF5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
