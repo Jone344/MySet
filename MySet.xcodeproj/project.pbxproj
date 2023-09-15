@@ -17,6 +17,9 @@
 		FF6EA4342AA9F5DB0048AD53 /* MySetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA4332AA9F5DB0048AD53 /* MySetTests.swift */; };
 		FF6EA43E2AA9F5DB0048AD53 /* MySetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA43D2AA9F5DB0048AD53 /* MySetUITests.swift */; };
 		FF6EA4402AA9F5DB0048AD53 /* MySetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA43F2AA9F5DB0048AD53 /* MySetUITestsLaunchTests.swift */; };
+		FF6EA44D2AAA0F970048AD53 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA44C2AAA0F970048AD53 /* Card.swift */; };
+		FF6EA44F2AAA10380048AD53 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA44E2AAA10380048AD53 /* Set.swift */; };
+		FF6EA4522AAA2B2A0048AD53 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF6EA4512AAA2B2A0048AD53 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		FF6EA4392AA9F5DB0048AD53 /* MySetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF6EA43D2AA9F5DB0048AD53 /* MySetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySetUITests.swift; sourceTree = "<group>"; };
 		FF6EA43F2AA9F5DB0048AD53 /* MySetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF6EA44C2AAA0F970048AD53 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		FF6EA44E2AAA10380048AD53 /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		FF6EA4512AAA2B2A0048AD53 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,15 @@
 		FF6EA4182AA9F5DA0048AD53 /* MySet */ = {
 			isa = PBXGroup;
 			children = (
-				FF6EA4192AA9F5DA0048AD53 /* AppDelegate.swift */,
-				FF6EA41B2AA9F5DA0048AD53 /* SceneDelegate.swift */,
-				FF6EA41D2AA9F5DA0048AD53 /* ViewController.swift */,
-				FF6EA41F2AA9F5DA0048AD53 /* Main.storyboard */,
 				FF6EA4252AA9F5DB0048AD53 /* Assets.xcassets */,
-				FF6EA4272AA9F5DB0048AD53 /* LaunchScreen.storyboard */,
-				FF6EA42A2AA9F5DB0048AD53 /* Info.plist */,
 				FF6EA4222AA9F5DA0048AD53 /* MySet.xcdatamodeld */,
+				FF6EA42A2AA9F5DB0048AD53 /* Info.plist */,
+				FF6EA41D2AA9F5DA0048AD53 /* ViewController.swift */,
+				FF6EA44E2AAA10380048AD53 /* Set.swift */,
+				FF6EA44C2AAA0F970048AD53 /* Card.swift */,
+				FF6EA4512AAA2B2A0048AD53 /* Deck.swift */,
+				FF6EA41F2AA9F5DA0048AD53 /* Main.storyboard */,
+				FF6EA4502AAA10470048AD53 /* Supporting Files */,
 			);
 			path = MySet;
 			sourceTree = "<group>";
@@ -128,6 +135,16 @@
 				FF6EA43F2AA9F5DB0048AD53 /* MySetUITestsLaunchTests.swift */,
 			);
 			path = MySetUITests;
+			sourceTree = "<group>";
+		};
+		FF6EA4502AAA10470048AD53 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF6EA41B2AA9F5DA0048AD53 /* SceneDelegate.swift */,
+				FF6EA4192AA9F5DA0048AD53 /* AppDelegate.swift */,
+				FF6EA4272AA9F5DB0048AD53 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +278,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF6EA4522AAA2B2A0048AD53 /* Deck.swift in Sources */,
 				FF6EA4242AA9F5DA0048AD53 /* MySet.xcdatamodeld in Sources */,
 				FF6EA41E2AA9F5DA0048AD53 /* ViewController.swift in Sources */,
+				FF6EA44F2AAA10380048AD53 /* Set.swift in Sources */,
+				FF6EA44D2AAA0F970048AD53 /* Card.swift in Sources */,
 				FF6EA41A2AA9F5DA0048AD53 /* AppDelegate.swift in Sources */,
 				FF6EA41C2AA9F5DA0048AD53 /* SceneDelegate.swift in Sources */,
 			);
