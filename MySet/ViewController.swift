@@ -28,8 +28,10 @@ class ViewController: UIViewController {
                 button.backgroundColor = UIColor.black
             } else {
                 button.layer.cornerRadius = 8.0
-                button.layer.borderWidth = 3.0
                 button.backgroundColor = UIColor.white
+
+             //   button.layer.borderWidth = 3.0
+              //  button.layer.borderColor = UIColor.blue.cgColor
                 
                 button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
                 
@@ -66,7 +68,6 @@ class ViewController: UIViewController {
             case .three:
                 return "\(buttonsGetFigure(for: card, and: button))\n\(buttonsGetFigure(for: card, and: button))\n\(buttonsGetFigure(for: card, and: button))"
         }
-
     }
     
     func figuresGetColor(for card: Card, and button: UIButton) -> UIColor {
@@ -116,6 +117,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func touchCard(_ sender: UIButton) {
+        if let cardNumber = cardButtons.lastIndex(of: sender) {
+            if game.getSelectedCards(index: cardNumber) {
+                sender.layer.borderWidth = 0.0
+                sender.layer.borderColor = UIColor.clear.cgColor
+            } else {
+                sender.layer.borderColor = UIColor.blue.cgColor
+                sender.layer.borderWidth = 3.0
+            }
+        }
     }
     
     @IBOutlet var cardButtons: [UIButton]!
