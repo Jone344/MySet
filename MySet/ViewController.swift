@@ -118,12 +118,19 @@ class ViewController: UIViewController {
 
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
-            if game.getSelectedCards(index: cardNumber) {
-                sender.layer.borderWidth = 0.0
-                sender.layer.borderColor = UIColor.clear.cgColor
-            } else {
+            game.getSelectedCards(index: cardNumber)
+            updateViewFromModelGetSelectedCards(sender)
+        }
+    }
+    
+    func updateViewFromModelGetSelectedCards(_ sender: UIButton) {
+        if let cardNumber = cardButtons.lastIndex(of: sender) {
+            if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
                 sender.layer.borderColor = UIColor.blue.cgColor
                 sender.layer.borderWidth = 3.0
+            } else {
+                sender.layer.borderWidth = 0.0
+                sender.layer.borderColor = UIColor.clear.cgColor
             }
         }
     }

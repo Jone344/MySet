@@ -15,18 +15,17 @@ class Set {
     var tryMatchCards = [Card]()
     var alreadyMatched = [Card]()
     
-    func getSelectedCards(index: Int) -> Bool {
+    
+    func getSelectedCards(index: Int) {
         if selectedCards.count < 3 {
             if !selectedCards.contains(cardsOnTable[index]) {
                 selectedCards.append(cardsOnTable[index])
             } else {
-                if let indexTouchedRepeat = selectedCards.firstIndex(of: cardsOnTable[index]) {
-                    selectedCards.remove(at: indexTouchedRepeat)
-                    return true
+                if let indexTouchedRepeat = selectedCards.firstIndex(of: cardsOnTable[index]){
+                        selectedCards.remove(at: indexTouchedRepeat)
                 }
             }
         }
-        return false
     }
     
     

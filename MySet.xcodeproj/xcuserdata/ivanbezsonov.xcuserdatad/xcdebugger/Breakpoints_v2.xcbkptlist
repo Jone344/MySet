@@ -195,7 +195,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1AE38CAA-EDD2-47B2-951C-5E3457DC5B30"
+            uuid = "B64AD09E-4AA2-47D0-BF34-B05CFC9B3AAF"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -211,32 +211,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B64AD09E-4AA2-47D0-BF34-B05CFC9B3AAF"
+            uuid = "13C26079-22A5-4F32-8881-5B6DD4380470"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MySet/Set.swift"
+            filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "getSelectedCards(index:)"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "touchCard(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "13C26079-22A5-4F32-8881-5B6DD4380470 - 8695b2e6f58f7fe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.touchCard(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "13C26079-22A5-4F32-8881-5B6DD4380470 - 8695b2e6f58f7fe8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.touchCard(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Desktop/dev/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1691F263-8E21-4C90-B8F6-BFC4C952565D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "touchCard(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E122D6ED-5199-4A66-83B3-82B024B9ADAC"
+            uuid = "1CE50745-D5C6-4056-96CE-AD2985EC2AC8"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "MySet/Set.swift"
+            filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getSelectedCards(index:)"
+            startingLineNumber = "126"
+            endingLineNumber = "126"
+            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55D5E764-2C8D-4985-88A6-2FD4B974A549"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
+            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6074CF48-8276-483F-912F-29CF6499E95D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "119"
+            endingLineNumber = "119"
+            landmarkName = "touchCard(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "691C304C-9D96-460E-9E56-48CA7782B0EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
