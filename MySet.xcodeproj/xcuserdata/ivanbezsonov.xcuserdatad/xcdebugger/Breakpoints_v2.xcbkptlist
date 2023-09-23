@@ -218,8 +218,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "touchCard(_:)"
             landmarkType = "7">
             <Locations>
@@ -266,8 +266,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "touchCard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -282,9 +282,9 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
-            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
+            landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -298,9 +298,9 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
-            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -314,8 +314,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "touchCard(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -330,9 +330,9 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "updateViewFromModelGetSelectedCards(_:)"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
+            landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

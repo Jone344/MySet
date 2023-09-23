@@ -33,8 +33,7 @@ class ViewController: UIViewController {
              //   button.layer.borderWidth = 3.0
               //  button.layer.borderColor = UIColor.blue.cgColor
                 
-                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
-                
+                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)                
             }
         }
     }
@@ -52,7 +51,6 @@ class ViewController: UIViewController {
             case .three:
              //   button.setTitle(figures[2], for: UIControl.State.normal)
                 return figures[2]
-
         }
     }
     
@@ -113,17 +111,16 @@ class ViewController: UIViewController {
             ]
             return NSAttributedString(string: titleGetCount(for: card, and: button), attributes: treyAttributes)
         }
-        
     }
 
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
             game.getSelectedCards(index: cardNumber)
-            updateViewFromModelGetSelectedCards(sender)
+            updateViewFromModelCheckAndPaintOverSelectedCards(sender)
         }
     }
     
-    func updateViewFromModelGetSelectedCards(_ sender: UIButton) {
+    func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
             if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
                 sender.layer.borderColor = UIColor.blue.cgColor
