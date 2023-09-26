@@ -17,18 +17,34 @@ class Set {
     
     
     func getSelectedCards(index: Int) {
-        if selectedCards.count < 3 {
+        
+        
+        if selectedCards.count < 4 {
             if !selectedCards.contains(cardsOnTable[index]) {
                 selectedCards.append(cardsOnTable[index])
             } else {
-                if let indexTouchedRepeat = selectedCards.firstIndex(of: cardsOnTable[index]){
+                if let indexTouchedRepeat = selectedCards.firstIndex(of: cardsOnTable[index]) {
                         selectedCards.remove(at: indexTouchedRepeat)
                 }
             }
         }
+       
+    }
+    func cleaningSelectedCardsArrayWhenCountEquelThree() -> Bool {
+        if selectedCards.count == 4 {
+            tryMatchCards = selectedCards
+            let savedLastCard = tryMatchCards.removeLast()
+            //tryMatchCards.removeAll()
+            selectedCards = []
+            selectedCards.append(savedLastCard)
+            
+            return true
+           // selectedCards.append(cardsOnTable[index])
+        }
+        return false
     }
     
-    
+
     func fillingCardsOnTable() {
         for _ in 0...23 {
             if deck.cards.count > 0 {
@@ -38,5 +54,11 @@ class Set {
             }
         }
     }
+    
+//    func checkCardsOnMatching() {
+//        switch
+//    }
+    
+    
 }
 

@@ -122,6 +122,17 @@ class ViewController: UIViewController {
     
     func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
+        
+            if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
+                for button in cardButtons {
+                    button.layer.borderWidth = 0.0
+                    button.layer.borderColor = UIColor.clear.cgColor
+                    sender.layer.borderWidth = 3.0
+                    sender.layer.borderColor = UIColor.blue.cgColor
+
+                }
+            }
+            
             if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
                 sender.layer.borderColor = UIColor.blue.cgColor
                 sender.layer.borderWidth = 3.0
@@ -129,6 +140,7 @@ class ViewController: UIViewController {
                 sender.layer.borderWidth = 0.0
                 sender.layer.borderColor = UIColor.clear.cgColor
             }
+            
         }
     }
     
