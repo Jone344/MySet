@@ -122,30 +122,32 @@ class ViewController: UIViewController {
     
     func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
-        
-            if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
-                for button in cardButtons {
-                    button.layer.borderWidth = 0.0
-                    button.layer.borderColor = UIColor.clear.cgColor
-                    sender.layer.borderWidth = 3.0
-                    sender.layer.borderColor = UIColor.blue.cgColor
-
-                }
-            }
-            
             if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
+                for button in cardButtons {
+                    if button.layer.borderColor == UIColor.green.cgColor {
+                        button.layer.borderWidth = 0.0
+                        button.layer.borderColor = UIColor.clear.cgColor
+                    }
+                }
                 sender.layer.borderColor = UIColor.blue.cgColor
                 sender.layer.borderWidth = 3.0
             } else {
                 sender.layer.borderWidth = 0.0
                 sender.layer.borderColor = UIColor.clear.cgColor
             }
-            
+            if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
+                for index in cardButtons.indices {
+                    var button = cardButtons[index]
+                  //  var card = game.tryMatchCards[index]
+                    var buttonLast = cardButtons[cardNumber]
+                    if button.layer.borderColor == UIColor.blue.cgColor {
+                        button.layer.borderColor = UIColor.green.cgColor
+                    }
+                }
+                sender.layer.borderColor = UIColor.green.cgColor
+            }
         }
     }
-    
     @IBOutlet var cardButtons: [UIButton]!
-    
-    
 }
 
