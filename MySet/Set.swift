@@ -15,9 +15,8 @@ class Set {
     var tryMatchCards = [Card]()
     var alreadyMatched = [Card]()
     
-    
     func getSelectedCards(index: Int) {
-        if selectedCards.count < 4 {
+        if selectedCards.count < 3 {
             if !selectedCards.contains(cardsOnTable[index]) {
                 selectedCards.append(cardsOnTable[index])
             } else {
@@ -29,19 +28,26 @@ class Set {
     }
     
     func cleaningSelectedCardsArrayWhenCountEquelThree() -> Bool {
+        for index in cardsOnTable.indices {
+            let card = cardsOnTable[index]
+            for index in selectedCards.indices {
+                let matchedCard = selectedCards[index]
+                if matchedCard == card {
+                    if selectedCards.count == 3 {
+                        if deck.cards.count > 0 {
+                            cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
+                        }
+                    }
+                }
+            }
+        }
         if selectedCards.count == 3 {
-            tryMatchCards = selectedCards
-            //let savedLastCard = tryMatchCards.removeLast()
-            tryMatchCards.removeAll()
             selectedCards = []
-            //selectedCards.append(savedLastCard)
-            
             return true
-           // selectedCards.append(cardsOnTable[index])
         }
         return false
     }
-    
+      
     func fillingCardsOnTable() {
         for _ in 0...23 {
             if deck.cards.count > 0 {
@@ -51,9 +57,4 @@ class Set {
             }
         }
     }
-    
-//    func checkCardsOnMatching() {
-//        switch
-//    }
 }
-
