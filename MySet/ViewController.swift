@@ -115,10 +115,12 @@ class ViewController: UIViewController {
 
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
-            game.getSelectedCards(index: cardNumber)
-            updateViewFromModelCheckAndPaintOverSelectedCards(sender)
-            makeGreenBorder(sender: sender)
-            afterThreeCardsChoosed(sender: sender)
+            if sender.layer.backgroundColor == UIColor.white.cgColor { // choose onle if card can see
+                game.getSelectedCards(index: cardNumber)
+                updateViewFromModelCheckAndPaintOverSelectedCards(sender)
+                makeGreenBorder(sender: sender)
+                afterThreeCardsChoosed(sender: sender)
+            }
         }
     }
       
@@ -145,7 +147,9 @@ class ViewController: UIViewController {
             for index in cardButtons.indices {
                 let button = cardButtons[index]
                 let card = game.cardsOnTable[index]
-                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+                if index < 12 { // that no will see cards still out game
+                    button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+                }
                 for greenBorder in greenColorBorder {
                     if button == greenBorder {
                         button.layer.borderWidth = 3.0
@@ -170,7 +174,6 @@ class ViewController: UIViewController {
                // let card = game.cardsOnTable[index]
                 button.layer.borderWidth = 0.0
                 button.layer.borderColor = UIColor.clear.cgColor
-                
             }
             greenColorBorder = []
             blueColorBorder = []
