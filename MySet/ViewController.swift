@@ -120,6 +120,7 @@ class ViewController: UIViewController {
                 updateViewFromModelCheckAndPaintOverSelectedCards(sender)
                 makeGreenBorder(sender: sender)
                 afterThreeCardsChoosed(sender: sender)
+                toReplaceCards()
             }
         }
     }
@@ -146,10 +147,6 @@ class ViewController: UIViewController {
         if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
             for index in cardButtons.indices {
                 let button = cardButtons[index]
-                let card = game.cardsOnTable[index]
-                if index < 12 { // that no will see cards still out game
-                    button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
-                }
                 for greenBorder in greenColorBorder {
                     if button == greenBorder {
                         button.layer.borderWidth = 3.0
@@ -160,6 +157,17 @@ class ViewController: UIViewController {
         }
     }
     
+    func toReplaceCards() {
+        for index in cardButtons.indices {
+            let button = cardButtons[index]
+            let card = game.cardsOnTable[index]
+            if game.replacingFlag {
+                if index < 12 { // that no will see cards still out game
+                    button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+                }
+            }
+        }
+    }
     
     func afterThreeCardsChoosed(sender: UIButton) {
         var countColorsBorder = 0

@@ -27,22 +27,33 @@ class Set {
         }
     }
     
+    var replacingFlag = false
     func cleaningSelectedCardsArrayWhenCountEquelThree() -> Bool {
+        if selectedCards.count == 4 {
+            var lastElement: [Card] = [selectedCards.removeLast()]
+            tryMatchCards = selectedCards
+            selectedCards = []
+            selectedCards.append(lastElement[0])
+            lastElement = []
+        }
         for index in cardsOnTable.indices {
             let card = cardsOnTable[index]
-            for index in selectedCards.indices {
-                let matchedCard = selectedCards[index]
+            for indexSelect in tryMatchCards.indices {
+                let matchedCard = tryMatchCards[indexSelect]
                 if matchedCard == card {
-                    if selectedCards.count == 3 {
+                    if replacingFlag == true {
                         if deck.cards.count > 0 {
-                            cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
+                            if tryMatchCards.count != 0 {
+                                cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
+                            }
                         }
                     }
                 }
             }
         }
+        tryMatchCards = []
         if selectedCards.count == 3 {
-            selectedCards = []
+            replacingFlag = true
             return true
         }
         return false
