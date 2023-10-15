@@ -16,7 +16,7 @@ class Set {
     var alreadyMatched = [Card]()
     
     func getSelectedCards(index: Int) {
-        if selectedCards.count < 3 {
+        if selectedCards.count < 4 {
             if !selectedCards.contains(cardsOnTable[index]) {
                 selectedCards.append(cardsOnTable[index])
             } else {
