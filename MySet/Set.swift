@@ -27,7 +27,6 @@ class Set {
         }
     }
     
-    var replacingFlag = false
     func cleaningSelectedCardsArrayWhenCountEquelThree() -> Bool {
         if selectedCards.count == 4 {
             var lastElement: [Card] = [selectedCards.removeLast()]
@@ -41,11 +40,9 @@ class Set {
             for indexSelect in tryMatchCards.indices {
                 let matchedCard = tryMatchCards[indexSelect]
                 if matchedCard == card {
-                    if replacingFlag == true {
-                        if deck.cards.count > 0 {
-                            if tryMatchCards.count != 0 {
-                                cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
-                            }
+                    if deck.cards.count > 0 {
+                        if tryMatchCards.count != 0 {
+                            cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
                         }
                     }
                 }
@@ -53,18 +50,17 @@ class Set {
         }
         tryMatchCards = []
         if selectedCards.count == 3 {
-            replacingFlag = true
             return true
         }
         return false
     }
       
     func fillingCardsOnTable() {
-        for _ in 0...23 {
+        for _ in 0...13 {
             if deck.cards.count > 0 {
-                if cardsOnTable.count < 25 {
+              //  if cardsOnTable.count < 25 {
                     cardsOnTable.append(deck.cards.removeFirst())
-                }
+              //  }
             }
         }
     }

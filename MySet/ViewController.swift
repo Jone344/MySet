@@ -23,17 +23,14 @@ class ViewController: UIViewController {
         
         for index in cardButtons.indices {
             let button = cardButtons[index]
+            if index < 12 {
             let card = game.cardsOnTable[index]
-            if index >= 12 {
-                button.backgroundColor = UIColor.black
-            } else {
                 button.layer.cornerRadius = 8.0
                 button.backgroundColor = UIColor.white
-
-             //   button.layer.borderWidth = 3.0
-              //  button.layer.borderColor = UIColor.blue.cgColor
-                
-                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)                
+                    
+                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+            } else {
+                button.backgroundColor = UIColor.clear
             }
         }
     }
@@ -160,12 +157,12 @@ class ViewController: UIViewController {
     func toReplaceCards() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
-            let card = game.cardsOnTable[index]
-            if game.replacingFlag {
+           // if game.replacingFlag {
                 if index < 12 { // that no will see cards still out game
+                    let card = game.cardsOnTable[index]
                     button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
                 }
-            }
+           // }
         }
     }
     
@@ -193,5 +190,6 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet var cardButtons: [UIButton]!
+    
 }
 
