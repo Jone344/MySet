@@ -56,11 +56,19 @@ class Set {
     }
       
     func fillingCardsOnTable() {
-        for _ in 0...13 {
+        for _ in 0...11 {
             if deck.cards.count > 0 {
-              //  if cardsOnTable.count < 25 {
-                    cardsOnTable.append(deck.cards.removeFirst())
-              //  }
+                cardsOnTable.append(deck.cards.removeFirst())
+            }
+        }
+    }
+    
+    func addThreeCardsOnTable(at index: Int) {
+        if deck.cards.count != 0 {
+            for _ in 0...2 {
+                if let indexAddedCard = selectedCards.firstIndex(of: cardsOnTable[index]) {
+                    cardsOnTable.append(deck.cards.remove(at: indexAddedCard))
+                }
             }
         }
     }
