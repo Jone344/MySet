@@ -15,12 +15,12 @@ class ViewController: UIViewController {
     let colors = [UIColor.purple, .green, .red]
     let shading: [CGFloat] = [1.0, 0.35]
     let strokeWidths = [4, -4]
-    let sizeFigures: CGFloat = 24.0
+    let sizeFigures: CGFloat = 20.0
 
     override func viewDidLoad() {
         super.viewDidLoad()
         game.fillingCardsOnTable()
-        
+        add3Cards.layer.cornerRadius = 8.0
         for index in cardButtons.indices {
             let button = cardButtons[index]
             if index < 12 {
@@ -147,6 +147,7 @@ class ViewController: UIViewController {
                 }
             }
         }
+        countBlueBorder = []
     }
     
     func makeGreenBorder(sender: UIButton) {
@@ -166,12 +167,10 @@ class ViewController: UIViewController {
     func toReplaceCards() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
-           // if game.replacingFlag {
-                if index < 12 { // that no will see cards still out game
-                    let card = game.cardsOnTable[index]
-                    button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
-                }
-           // }
+            if index < 12 { // that no will see cards still out game
+                let card = game.cardsOnTable[index]
+                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+            }
         }
     }
     
@@ -197,6 +196,13 @@ class ViewController: UIViewController {
             blueColorBorder.append(sender)
         }
     }
+    
+    @IBAction func addThreeCards(_ sender: UIButton) {
+        
+    }
+    
+    @IBOutlet weak var add3Cards: UIButton!
+    
     
     @IBOutlet var cardButtons: [UIButton]!
 }
