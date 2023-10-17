@@ -134,7 +134,7 @@ class ViewController: UIViewController {
                 blueColorBorder.append(button)
             }
         }
-        if blueColorBorder.count > 2 {
+        if countBlueBorder.count < 3 {
             if let cardNumber = cardButtons.lastIndex(of: sender) {
                 if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
                     sender.layer.borderWidth = 3.0

@@ -346,6 +346,21 @@
                   endingLineNumber = "131"
                   offsetFromSymbolStart = "112">
                </Location>
+               <Location
+                  uuid = "9BB34829-80CB-40EE-86C4-23E56728D9CA - aca87769f835b8f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "128">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -363,38 +378,6 @@
             endingLineNumber = "150"
             landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "F11B6AB9-BA73-41B7-AF1B-F991AB124652 - efa8fa8fe1311d0a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
-                  moduleName = "MySet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanbezsonov/Documents/MySet3/MySet/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "145"
-                  endingLineNumber = "145"
-                  offsetFromSymbolStart = "1440">
-               </Location>
-               <Location
-                  uuid = "F11B6AB9-BA73-41B7-AF1B-F991AB124652 - efa8fa8fe1311d29"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
-                  moduleName = "MySet"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ivanbezsonov/Documents/MySet3/MySet/ViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "144"
-                  endingLineNumber = "144"
-                  offsetFromSymbolStart = "1444">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
