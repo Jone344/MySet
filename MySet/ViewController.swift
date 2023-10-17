@@ -113,11 +113,13 @@ class ViewController: UIViewController {
     @IBAction func touchCard(_ sender: UIButton) {
         if let cardNumber = cardButtons.lastIndex(of: sender) {
             if sender.layer.backgroundColor == UIColor.white.cgColor { // choose onle if card can see
-                game.getSelectedCards(index: cardNumber)
-                updateViewFromModelCheckAndPaintOverSelectedCards(sender)
-                makeGreenBorder(sender: sender)
-                afterThreeCardsChoosed(sender: sender)
-                toReplaceCards()
+                if sender.layer.borderColor != UIColor.green.cgColor {
+                    game.getSelectedCards(index: cardNumber)
+                    updateViewFromModelCheckAndPaintOverSelectedCards(sender)
+                    makeGreenBorder(sender: sender)
+                    afterThreeCardsChoosed(sender: sender)
+                    toReplaceCards()
+                }
             }
         }
     }
@@ -126,17 +128,24 @@ class ViewController: UIViewController {
     var blueColorBorder = [UIButton()]
     
     func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
-        if let cardNumber = cardButtons.lastIndex(of: sender) {
-            if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
-                sender.layer.borderWidth = 3.0
-                sender.layer.borderColor = UIColor.blue.cgColor
-                greenColorBorder.append(sender)
-                blueColorBorder.append(sender)
-            } else {
-                sender.layer.borderWidth = 0.0
-                sender.layer.borderColor = UIColor.clear.cgColor
+        var countBlueBorder = [UIButton]()
+        for button in cardButtons {
+            if button.layer.borderColor == UIColor.blue.cgColor {
+                blueColorBorder.append(button)
             }
-            
+        }
+        if blueColorBorder.count > 2 {
+            if let cardNumber = cardButtons.lastIndex(of: sender) {
+                if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
+                    sender.layer.borderWidth = 3.0
+                    sender.layer.borderColor = UIColor.blue.cgColor
+                    greenColorBorder.append(sender)
+                    blueColorBorder.append(sender)
+                } else {
+                    sender.layer.borderWidth = 0.0
+                    sender.layer.borderColor = UIColor.clear.cgColor
+                }
+            }
         }
     }
     
@@ -190,6 +199,5 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet var cardButtons: [UIButton]!
-    
 }
 
