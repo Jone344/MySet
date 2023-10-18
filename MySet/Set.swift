@@ -63,12 +63,10 @@ class Set {
         }
     }
     
-    func addThreeCardsOnTable(at index: Int) {
+    func addThreeCardsOnTable() {
         if deck.cards.count != 0 {
             for _ in 0...2 {
-                if let indexAddedCard = selectedCards.firstIndex(of: cardsOnTable[index]) {
-                    cardsOnTable.append(deck.cards.remove(at: indexAddedCard))
-                }
+                cardsOnTable.append(deck.cards.removeFirst())
             }
         }
     }

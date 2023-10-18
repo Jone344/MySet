@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         add3Cards.layer.cornerRadius = 8.0
         for index in cardButtons.indices {
             let button = cardButtons[index]
-            if index < 12 {
+            if index < game.cardsOnTable.count { // < 12
             let card = game.cardsOnTable[index]
                 button.layer.cornerRadius = 8.0
                 button.backgroundColor = UIColor.white
@@ -167,7 +167,7 @@ class ViewController: UIViewController {
     func toReplaceCards() {
         for index in cardButtons.indices {
             let button = cardButtons[index]
-            if index < 12 { // that no will see cards still out game
+            if index < game.cardsOnTable.count { // that no will see cards still out game. Instead < 12.
                 let card = game.cardsOnTable[index]
                 button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
             }
@@ -184,7 +184,6 @@ class ViewController: UIViewController {
         if countColorsBorder == 4 {
             for index in cardButtons.indices {
                 let button = cardButtons[index]
-               // let card = game.cardsOnTable[index]
                 button.layer.borderWidth = 0.0
                 button.layer.borderColor = UIColor.clear.cgColor
             }
@@ -198,7 +197,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addThreeCards(_ sender: UIButton) {
-        
+        game.addThreeCardsOnTable()
+        for index in cardButtons.indices {
+            let button = cardButtons[index]
+            if index < game.cardsOnTable.count { // < 12
+            let card = game.cardsOnTable[index]
+                button.layer.cornerRadius = 8.0
+                button.backgroundColor = UIColor.white
+                    
+                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+            } else {
+                button.backgroundColor = UIColor.clear
+            }
+        }
     }
     
     @IBOutlet weak var add3Cards: UIButton!
