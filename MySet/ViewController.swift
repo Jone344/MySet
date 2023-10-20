@@ -115,9 +115,9 @@ class ViewController: UIViewController {
             if sender.layer.backgroundColor == UIColor.white.cgColor { // choose onle if card can see
                 if sender.layer.borderColor != UIColor.green.cgColor {
                     game.getSelectedCards(index: cardNumber)
+                    afterThreeCardsChoosed(sender: sender)
                     updateViewFromModelCheckAndPaintOverSelectedCards(sender)
                     makeGreenBorder(sender: sender)
-                    afterThreeCardsChoosed(sender: sender)
                     toReplaceCards()
                 }
             }
@@ -125,43 +125,61 @@ class ViewController: UIViewController {
     }
       
     var greenColorBorder = [UIButton]()
-    var blueColorBorder = [UIButton()]
+    var blueColorBorder = [UIButton]()
     
     func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
-        var countBlueBorder = [UIButton]()
-        for button in cardButtons {
-            if button.layer.borderColor == UIColor.blue.cgColor {
-                blueColorBorder.append(button)
-            }
-        }
-        if countBlueBorder.count < 3 {
-            if let cardNumber = cardButtons.lastIndex(of: sender) {
-                if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
-                    sender.layer.borderWidth = 3.0
-                    sender.layer.borderColor = UIColor.blue.cgColor
-                    greenColorBorder.append(sender)
-                    blueColorBorder.append(sender)
-                } else {
-                    sender.layer.borderWidth = 0.0
-                    sender.layer.borderColor = UIColor.clear.cgColor
+        if let cardNumber = cardButtons.firstIndex(of: sender){
+            if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
+                sender.layer.borderWidth = 3.0
+                sender.layer.borderColor = UIColor.blue.cgColor
+                blueColorBorder.append(sender)
+            } else {
+                sender.layer.borderWidth = 0.0
+                sender.layer.borderColor = UIColor.clear.cgColor
+                for index in blueColorBorder.indices {
+                    let blueBorder = blueColorBorder[index]
+                    if blueBorder == sender {
+                        blueColorBorder.remove(at: index)
+                        break
+                    }
                 }
             }
         }
-        countBlueBorder = []
     }
     
     func makeGreenBorder(sender: UIButton) {
         if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
             for index in cardButtons.indices {
                 let button = cardButtons[index]
-                for greenBorder in greenColorBorder {
+                for greenBorder in blueColorBorder {
                     if button == greenBorder {
-                        button.layer.borderWidth = 3.0
-                        button.layer.borderColor = UIColor.green.cgColor
+                        if blueColorBorder.count > 2 {
+                            button.layer.borderWidth = 3.0
+                            button.layer.borderColor = UIColor.green.cgColor
+                        }
                     }
                 }
             }
         }
+    }
+    
+    var countColorsBorder = 0
+    func afterThreeCardsChoosed(sender: UIButton) {
+        for button in cardButtons {
+            if button.layer.borderWidth == 3.0 {
+                countColorsBorder += 1
+            }
+            if countColorsBorder == 3 {
+                for button in cardButtons {
+                    button.layer.borderWidth = 0.0
+                    button.layer.borderColor = UIColor.clear.cgColor
+                    blueColorBorder = []
+                }
+                sender.layer.borderWidth = 3.0
+                sender.layer.borderColor = UIColor.blue.cgColor
+            }
+        }
+        countColorsBorder = 0
     }
     
     func toReplaceCards() {
@@ -174,27 +192,6 @@ class ViewController: UIViewController {
         }
     }
     
-    func afterThreeCardsChoosed(sender: UIButton) {
-        var countColorsBorder = 0
-        for button in cardButtons {
-            if button.layer.borderWidth == 3.0 {
-                countColorsBorder += 1
-            }
-        }
-        if countColorsBorder == 4 {
-            for index in cardButtons.indices {
-                let button = cardButtons[index]
-                button.layer.borderWidth = 0.0
-                button.layer.borderColor = UIColor.clear.cgColor
-            }
-            greenColorBorder = []
-            blueColorBorder = []
-            sender.layer.borderWidth = 3.0
-            sender.layer.borderColor = UIColor.blue.cgColor
-            greenColorBorder.append(sender)
-            blueColorBorder.append(sender)
-        }
-    }
     
     @IBAction func addThreeCards(_ sender: UIButton) {
         game.addThreeCardsOnTable()

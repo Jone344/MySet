@@ -188,13 +188,13 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "makeGreenBorder(sender:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "7F390197-6B9B-498F-BC85-834239FC9EAC - c6dc0a8801f01b2a"
+                  uuid = "7F390197-6B9B-498F-BC85-834239FC9EAC - c6dc0a8801f0148f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -204,9 +204,39 @@
                   urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142"
-                  offsetFromSymbolStart = "152">
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "7F390197-6B9B-498F-BC85-834239FC9EAC - c6dc0a8801f0148f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "145"
+                  endingLineNumber = "145"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "7F390197-6B9B-498F-BC85-834239FC9EAC - c6dc0a8801f014f0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "136">
                </Location>
                <Location
                   uuid = "7F390197-6B9B-498F-BC85-834239FC9EAC - c6dc0a8801f01b4d"
@@ -221,7 +251,7 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "143"
                   endingLineNumber = "143"
-                  offsetFromSymbolStart = "148">
+                  offsetFromSymbolStart = "136">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -361,6 +391,36 @@
                   endingLineNumber = "130"
                   offsetFromSymbolStart = "128">
                </Location>
+               <Location
+                  uuid = "9BB34829-80CB-40EE-86C4-23E56728D9CA - aca87769f835b8f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "9BB34829-80CB-40EE-86C4-23E56728D9CA - aca87769f835b8f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "130"
+                  endingLineNumber = "130"
+                  offsetFromSymbolStart = "132">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -374,26 +434,42 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "151"
-            endingLineNumber = "151"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
             landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E21C7556-B8AB-42AA-B0CF-293ADFCD12EE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySet/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
-            landmarkName = "afterThreeCardsChoosed(sender:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F11B6AB9-BA73-41B7-AF1B-F991AB124652 - c6dc0a8801f01413"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "F11B6AB9-BA73-41B7-AF1B-F991AB124652 - aca87769f835b699"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.updateViewFromModelCheckAndPaintOverSelectedCards(__C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "148"
+                  endingLineNumber = "148"
+                  offsetFromSymbolStart = "1876">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -406,26 +482,72 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "165"
-            endingLineNumber = "165"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "makeGreenBorder(sender:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E52038EF-EA4F-45CB-BA75-AC968DE146EF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySet/ViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
-            landmarkName = "afterThreeCardsChoosed(sender:)"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1AF500A5-B734-48E8-9822-C1F7778EB15F - cb248c562fa288d8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.toReplaceCards() -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "1AF500A5-B734-48E8-9822-C1F7778EB15F - c6dc0a8801f0157c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "1AF500A5-B734-48E8-9822-C1F7778EB15F - c6dc0a8801f016e1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "163"
+                  endingLineNumber = "163"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "1AF500A5-B734-48E8-9822-C1F7778EB15F - c6dc0a8801f0151b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.makeGreenBorder(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "157"
+                  endingLineNumber = "157"
+                  offsetFromSymbolStart = "1408">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -632,6 +754,70 @@
                   startingLineNumber = "72"
                   endingLineNumber = "72"
                   offsetFromSymbolStart = "844">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D8715595-3D30-493F-BF2F-A287654679F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "afterThreeCardsChoosed(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "989A850F-8467-40F6-8B28-6B77859FFD75"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MySet/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "afterThreeCardsChoosed(sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "989A850F-8467-40F6-8B28-6B77859FFD75 - 7162b77f2ee922e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.afterThreeCardsChoosed(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "144">
+               </Location>
+               <Location
+                  uuid = "989A850F-8467-40F6-8B28-6B77859FFD75 - 7162b77f2ee922e9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MySet.ViewController.afterThreeCardsChoosed(sender: __C.UIButton) -&gt; ()"
+                  moduleName = "MySet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ivanbezsonov/Documents/MySet/MySet/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "162"
+                  endingLineNumber = "162"
+                  offsetFromSymbolStart = "404">
                </Location>
             </Locations>
          </BreakpointContent>
