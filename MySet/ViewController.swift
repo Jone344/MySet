@@ -115,8 +115,8 @@ class ViewController: UIViewController {
             if sender.layer.backgroundColor == UIColor.white.cgColor { // choose onle if card can see
                 if sender.layer.borderColor != UIColor.green.cgColor {
                     game.getSelectedCards(index: cardNumber)
-                    afterThreeCardsChoosed(sender: sender)
                     updateViewFromModelCheckAndPaintOverSelectedCards(sender)
+                    afterThreeCardsChoosed(sender: sender)
                     makeGreenBorder(sender: sender)
                     toReplaceCards()
                 }
@@ -129,38 +129,24 @@ class ViewController: UIViewController {
     
     func updateViewFromModelCheckAndPaintOverSelectedCards(_ sender: UIButton) {
         if let cardNumber = cardButtons.firstIndex(of: sender){
-            if game.selectedCards.contains(game.cardsOnTable[cardNumber]) {
+            if sender.layer.borderColor != UIColor.blue.cgColor {
                 sender.layer.borderWidth = 3.0
                 sender.layer.borderColor = UIColor.blue.cgColor
                 blueColorBorder.append(sender)
             } else {
-                sender.layer.borderWidth = 0.0
-                sender.layer.borderColor = UIColor.clear.cgColor
-                for index in blueColorBorder.indices {
-                    let blueBorder = blueColorBorder[index]
-                    if blueBorder == sender {
-                        blueColorBorder.remove(at: index)
-                        break
-                    }
-                }
-            }
-        }
-    }
-    
-    func makeGreenBorder(sender: UIButton) {
-        if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
-            for index in cardButtons.indices {
-                let button = cardButtons[index]
-                for greenBorder in blueColorBorder {
-                    if button == greenBorder {
-                        if blueColorBorder.count > 2 {
-                            button.layer.borderWidth = 3.0
-                            button.layer.borderColor = UIColor.green.cgColor
+                    for index in blueColorBorder.indices {
+                        let blueBorder = blueColorBorder[index]
+                        if blueColorBorder.count < 3 {
+                        sender.layer.borderWidth = 0.0
+                        sender.layer.borderColor = UIColor.clear.cgColor
+                            if blueBorder == sender {
+                                blueColorBorder.remove(at: index)
+                                break
+                            }
                         }
                     }
                 }
             }
-        }
     }
     
     var countColorsBorder = 0
@@ -169,36 +155,58 @@ class ViewController: UIViewController {
             if button.layer.borderWidth == 3.0 {
                 countColorsBorder += 1
             }
-            if countColorsBorder == 3 {
+            if countColorsBorder == 4 {
                 for button in cardButtons {
                     button.layer.borderWidth = 0.0
                     button.layer.borderColor = UIColor.clear.cgColor
-                    blueColorBorder = []
                 }
                 sender.layer.borderWidth = 3.0
                 sender.layer.borderColor = UIColor.blue.cgColor
+                let lastElement = blueColorBorder.removeLast()
+                blueColorBorder = []
+                blueColorBorder.append(lastElement)
             }
         }
         countColorsBorder = 0
     }
     
-    func toReplaceCards() {
-        for index in cardButtons.indices {
-            let button = cardButtons[index]
-            if index < game.cardsOnTable.count { // that no will see cards still out game. Instead < 12.
-                let card = game.cardsOnTable[index]
-                button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+    func makeGreenBorder(sender: UIButton) {
+        if game.toTryMatchCards() {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                for greenBorder in blueColorBorder {
+                    if button == greenBorder {
+                        if blueColorBorder.count == 3 {
+                            button.layer.borderWidth = 3.0
+                            button.layer.borderColor = UIColor.green.cgColor
+                        }
+                    }
+                }
             }
+        }
+        if blueColorBorder.count == 3 {
+            blueColorBorder = []
         }
     }
     
+    func toReplaceCards() {
+        if game.cleaningSelectedCardsArrayWhenCountEquelThree() {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                if index < game.cardsOnTable.count { // that no will see cards still out game. Instead < 12.
+                    let card = game.cardsOnTable[index]
+                    button.setAttributedTitle(figuresGetFilling(for: card, and: button), for: UIControl.State.normal)
+                }
+            }
+        }
+    }
     
     @IBAction func addThreeCards(_ sender: UIButton) {
         game.addThreeCardsOnTable()
         for index in cardButtons.indices {
             let button = cardButtons[index]
             if index < game.cardsOnTable.count { // < 12
-            let card = game.cardsOnTable[index]
+                let card = game.cardsOnTable[index]
                 button.layer.cornerRadius = 8.0
                 button.backgroundColor = UIColor.white
                     
@@ -210,7 +218,6 @@ class ViewController: UIViewController {
     }
     
     @IBOutlet weak var add3Cards: UIButton!
-    
     
     @IBOutlet var cardButtons: [UIButton]!
 }
