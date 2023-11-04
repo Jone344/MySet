@@ -21,9 +21,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         game.fillingCardsOnTable()
         add3Cards.layer.cornerRadius = 8.0
+        newGame.layer.cornerRadius = 8.0
+
         for index in cardButtons.indices {
             let button = cardButtons[index]
-            if index < game.cardsOnTable.count { // < 12
+            if index < game.cardsOnTable.count { // < 12 or  game.cardsOnTable.count
             let card = game.cardsOnTable[index]
                 button.layer.cornerRadius = 8.0
                 button.backgroundColor = UIColor.white
@@ -136,19 +138,19 @@ class ViewController: UIViewController {
                 sender.layer.borderColor = UIColor.blue.cgColor
                 blueColorBorder.append(sender)
             } else {
-                    for index in blueColorBorder.indices {
-                        let blueBorder = blueColorBorder[index]
-                        if blueColorBorder.count < 3 {
-                        sender.layer.borderWidth = 0.0
-                        sender.layer.borderColor = UIColor.clear.cgColor
-                            if blueBorder == sender {
-                                blueColorBorder.remove(at: index)
-                                break
-                            }
+                for index in blueColorBorder.indices {
+                    let blueBorder = blueColorBorder[index]
+                    if blueColorBorder.count < 3 {
+                    sender.layer.borderWidth = 0.0
+                    sender.layer.borderColor = UIColor.clear.cgColor
+                        if blueBorder == sender {
+                            blueColorBorder.remove(at: index)
+                            break
                         }
                     }
                 }
             }
+        }
     }
     
     var countColorsBorder = 0
@@ -228,7 +230,7 @@ class ViewController: UIViewController {
             for index in cardButtons.indices {
                 let button = cardButtons[index]
                 if index < game.cardsOnTable.count {
-                    let card = game.cardsOnTable[index]
+                    //   let card = game.cardsOnTable[index]
                     if game.toTryMatchCards() {
                         if button.layer.borderColor == UIColor.green.cgColor {
                             button.isHidden = true
@@ -239,6 +241,28 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func newGameStart(_ sender: UIButton) {
+        game.deck.cards += game.alreadyMatched
+        game.deck.cards += game.cardsOnTable
+        game.alreadyMatched = []
+        game.selectedCards = []
+        game.tryMatchCards = []
+        game.cardsOnTable = []
+        add3Cards.isEnabled = true
+        viewDidLoad()
+        for index in cardButtons.indices {
+            let button = cardButtons[index]
+            button.layer.borderColor = UIColor.clear.cgColor
+            button.isHidden = false
+            if button.backgroundColor == UIColor.clear {
+                button.setAttributedTitle(nil, for: UIControl.State.normal)
+                button.setTitle("", for: UIControl.State.normal)
+            }
+        }
+    }
+    
+    @IBOutlet weak var newGame: UIButton!
     
     @IBOutlet weak var add3Cards: UIButton!
     
