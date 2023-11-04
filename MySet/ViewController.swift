@@ -35,6 +35,7 @@ class ViewController: UIViewController {
         }
     }
     
+    
     func buttonsGetFigure(for card: Card, and button: UIButton) -> String {
         switch card.form {
             case .one:
@@ -119,6 +120,7 @@ class ViewController: UIViewController {
                     afterThreeCardsChoosed(sender: sender)
                     makeGreenBorder(sender: sender)
                     toReplaceCards()
+                    ifDeckOverAndMatchedCrdsLeft()
                 }
             }
         }
@@ -202,6 +204,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addThreeCards(_ sender: UIButton) {
+       if game.cardsOnTable.count == 21 {
+           // sender.isHidden = true
+            sender.isEnabled = false
+        }
         game.addThreeCardsOnTable()
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -216,6 +222,23 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func ifDeckOverAndMatchedCrdsLeft () {
+        if game.deck.cards.count == 0 {
+            for index in cardButtons.indices {
+                let button = cardButtons[index]
+                if index < game.cardsOnTable.count {
+                    let card = game.cardsOnTable[index]
+                    if game.toTryMatchCards() {
+                        if button.layer.borderColor == UIColor.green.cgColor {
+                            button.isHidden = true
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
     
     @IBOutlet weak var add3Cards: UIButton!
     

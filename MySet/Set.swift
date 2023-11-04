@@ -38,6 +38,7 @@ class Set {
                     if matchedCard == card {
                         if deck.cards.count > 0 {
                             if selectedCards.count != 0 {
+                                alreadyMatched.append(matchedCard)
                                 cardsOnTable.replace([card], with: [deck.cards.remove(at:deck.cards.count.arc4random)])
                             }
                         }
@@ -73,26 +74,27 @@ class Set {
     }
     
     func toTryMatchCards() -> Bool {
-        var count = 0
-        if selectedCards.count == 3 {
-            if selectedCards[0].amount == selectedCards[1].amount && selectedCards[1].amount == selectedCards[2].amount || selectedCards[0].amount != selectedCards[1].amount && selectedCards[1].amount != selectedCards[2].amount && selectedCards[0].amount != selectedCards[2].amount {
-                count += 1
-            }
-            if selectedCards[0].color == selectedCards[1].color && selectedCards[1].color == selectedCards[2].color || selectedCards[0].color != selectedCards[1].color && selectedCards[1].color != selectedCards[2].color && selectedCards[0].color != selectedCards[2].color {
-                count += 1
-            }
-            if selectedCards[0].form == selectedCards[1].form && selectedCards[1].form == selectedCards[2].form || selectedCards[0].form != selectedCards[1].form && selectedCards[1].form != selectedCards[2].form && selectedCards[0].form != selectedCards[2].form {
-                count += 1
-            }
-            if selectedCards[0].shading == selectedCards[1].shading && selectedCards[1].shading == selectedCards[2].shading || selectedCards[0].shading != selectedCards[1].shading && selectedCards[1].shading != selectedCards[2].shading && selectedCards[0].shading != selectedCards[2].shading {
-                count += 1
-            }
-            if count == 4 {
-                count = 0
-                return true
-            }
-        }
-        count = 0
-        return false
+//        var count = 0
+//        if selectedCards.count == 3 {
+//            if selectedCards[0].amount == selectedCards[1].amount && selectedCards[1].amount == selectedCards[2].amount || selectedCards[0].amount != selectedCards[1].amount && selectedCards[1].amount != selectedCards[2].amount && selectedCards[0].amount != selectedCards[2].amount {
+//                count += 1
+//            }
+//            if selectedCards[0].color == selectedCards[1].color && selectedCards[1].color == selectedCards[2].color || selectedCards[0].color != selectedCards[1].color && selectedCards[1].color != selectedCards[2].color && selectedCards[0].color != selectedCards[2].color {
+//                count += 1
+//            }
+//            if selectedCards[0].form == selectedCards[1].form && selectedCards[1].form == selectedCards[2].form || selectedCards[0].form != selectedCards[1].form && selectedCards[1].form != selectedCards[2].form && selectedCards[0].form != selectedCards[2].form {
+//                count += 1
+//            }
+//            if selectedCards[0].shading == selectedCards[1].shading && selectedCards[1].shading == selectedCards[2].shading || selectedCards[0].shading != selectedCards[1].shading && selectedCards[1].shading != selectedCards[2].shading && selectedCards[0].shading != selectedCards[2].shading {
+//                count += 1
+//            }
+//            if count == 4 {
+//                count = 0
+//                return true
+//            }
+//        }
+//        count = 0
+//        return false
+        return true
     }
 }
