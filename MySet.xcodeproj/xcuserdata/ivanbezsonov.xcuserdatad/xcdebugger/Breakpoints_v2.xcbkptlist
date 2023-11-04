@@ -71,38 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0354843A-129E-4B8A-BE74-548CCFEAE761"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySet/Set.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "cleaningSelectedCardsArrayWhenCountEquelThree()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9099CF71-CA6E-4BF2-B0CE-6C8F3C2FC22C"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySet/Set.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "getSelectedCards(index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "E96A3308-F9B2-4DE3-AD8F-E910CEC1F014"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -126,8 +94,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +110,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "updateViewFromModelCheckAndPaintOverSelectedCards(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +126,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "164"
+            endingLineNumber = "164"
             landmarkName = "afterThreeCardsChoosed(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -183,22 +151,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "196EE034-27A2-4474-B296-4C43FD8EBA5F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MySet/Set.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "getSelectedCards(index:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "053D0AA2-F31F-4755-8BC5-7D72EFB0B90C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -206,8 +158,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "177"
-            endingLineNumber = "177"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "makeGreenBorder(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +174,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "194"
-            endingLineNumber = "194"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
             landmarkName = "makeGreenBorder(sender:)"
             landmarkType = "7">
             <Locations>
@@ -285,8 +237,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "ifDeckOverAndMatchedCrdsLeft()"
             landmarkType = "7">
          </BreakpointContent>
@@ -317,8 +269,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "209"
-            endingLineNumber = "209"
+            startingLineNumber = "221"
+            endingLineNumber = "221"
             landmarkName = "addThreeCards(_:)"
             landmarkType = "7">
             <Locations>
@@ -365,8 +317,8 @@
             filePath = "MySet/ViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "226"
-            endingLineNumber = "226"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "addThreeCards(_:)"
             landmarkType = "7">
             <Locations>

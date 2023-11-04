@@ -11,6 +11,12 @@ class ViewController: UIViewController {
     
     var game = Set()
     
+    var scores: Int = 0 {
+        didSet {
+            score.text = "Score: \(scores)"
+        }
+    }
+    
     let figures = ["▲","■","●"]
     let colors = [UIColor.purple, .green, .red]
     let shading: [CGFloat] = [1.0, 0.35]
@@ -22,6 +28,7 @@ class ViewController: UIViewController {
         game.fillingCardsOnTable()
         add3Cards.layer.cornerRadius = 8.0
         newGame.layer.cornerRadius = 8.0
+        score.layer.cornerRadius = 8.0
 
         for index in cardButtons.indices {
             let button = cardButtons[index]
@@ -190,6 +197,11 @@ class ViewController: UIViewController {
         }
         if blueColorBorder.count == 3 {
             blueColorBorder = []
+            if game.toTryMatchCards() {
+                scores += 3
+            } else {
+                scores -= 1
+            }
         }
     }
     
@@ -243,6 +255,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func newGameStart(_ sender: UIButton) {
+        scores = 0
         game.deck.cards += game.alreadyMatched
         game.deck.cards += game.cardsOnTable
         game.alreadyMatched = []
@@ -257,10 +270,12 @@ class ViewController: UIViewController {
             button.isHidden = false
             if button.backgroundColor == UIColor.clear {
                 button.setAttributedTitle(nil, for: UIControl.State.normal)
-                button.setTitle("", for: UIControl.State.normal)
+                button.setTitle("", for: UIControl.State.normal) // not nil!!!! only ""
             }
         }
     }
+        
+    @IBOutlet weak var score: UILabel!
     
     @IBOutlet weak var newGame: UIButton!
     

@@ -280,6 +280,15 @@
                                     <action selector="newGameStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G9D-7Z-pLr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="khi-xz-vuY">
+                                <rect key="frame" x="274" y="734" width="84" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -287,6 +296,7 @@
                     <connections>
                         <outlet property="add3Cards" destination="HiI-w1-xeR" id="bWq-ye-r3p"/>
                         <outlet property="newGame" destination="hll-oa-IuX" id="Oly-05-J2b"/>
+                        <outlet property="score" destination="khi-xz-vuY" id="hMk-06-GYV"/>
                         <outletCollection property="cardButtons" destination="bZ6-TU-IQn" collectionClass="NSMutableArray" id="MKn-p8-Qds"/>
                         <outletCollection property="cardButtons" destination="KHu-N7-3Ab" collectionClass="NSMutableArray" id="PRZ-F1-qqI"/>
                         <outletCollection property="cardButtons" destination="DPl-a5-UrR" collectionClass="NSMutableArray" id="zFx-26-El7"/>
@@ -322,11 +332,17 @@
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
